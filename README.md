@@ -64,9 +64,16 @@ Maven:
 ```  
 
 Gradle:  
-``` xml
+```.Groovy
 compile 'cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2'
 ```  
+
+For `support-v13` users (for those, who is using view pager with **native** fragments):
+```.Groovy
+    compile ('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+```
 
 ## Contact Me
 - [trinea@google plus](https://plus.google.com/u/0/111989205221366883984)
